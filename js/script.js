@@ -1,5 +1,14 @@
 "use strict";
 
-let result = confirm('Are you here?');
+let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-console.log(result);
+let personalMovieDB = {
+count: numberOfFilms,
+movies: {
+    film: prompt('Один из последних просмотренных фильмов?', ''),
+    value: +prompt('На сколько оцените его?', '')
+},
+actors: {},
+genres: [],
+privat: false
+};
